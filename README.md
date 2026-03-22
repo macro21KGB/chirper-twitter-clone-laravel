@@ -6,7 +6,8 @@ A simple Twitter clone built with Laravel in just a couple of hours.
 
 *   Create posts
 *   View posts
-*   Like posts
+*   Edit posts
+*   Delete posts
 
 ## Installation
 
