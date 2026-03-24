@@ -2,13 +2,14 @@
 
 namespace Database\Factories;
 
-use App\Models\Pokemon;
+use App\Models\Chirp;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends Factory<Pokemon>
+ * @extends Factory<Chirp>
  */
-class PokemonFactory extends Factory
+class ChirpFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -18,8 +19,8 @@ class PokemonFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => fake()->word(),
-
+            'message' => fake()->sentence(),
+            'user_id' => User::inRandomOrder()->first()->id,
         ];
     }
 }

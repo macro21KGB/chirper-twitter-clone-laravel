@@ -12,7 +12,7 @@
         <nav class="bg-white fixed w-full z-20 top-0 inset-s-0 border-b border-default">
 
             @if(session('success'))
-            <div id="toast-default" class="flex absolute right-10 top-20 items-center w-full max-w-xs p-4 text-body bg-green-300/70 rounded-md shadow-xs border border-slate-200/60" role="alert">
+            <div id="toast-default" class="animate-fade-out flex absolute right-10 top-20 items-center w-full max-w-xs p-4 text-body bg-green-300/70 rounded-md shadow-xs border border-slate-200/60" role="alert">
                 {{session('success')}}
             </div>
             @endif

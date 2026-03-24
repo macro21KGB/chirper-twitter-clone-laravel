@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Chirp;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -21,5 +22,13 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]);
+
+        User::factory()->create([
+            'name' => 'Monica',
+            'email' => 'monica@example.com',
+        ]);
+
+        Chirp::factory(50)->create();
+
     }
 }

@@ -30,5 +30,8 @@
         @endforelse
 
         </div>
+
+        <br />
+        {{ $chirps->links()}}
     </div>
 </x-layout>
